@@ -1,0 +1,37 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.horizontalnav{
+background-color: rgb(27, 25, 25);
+color:white;
+list-style-type: none;
+height:60px;
+}
+
+.horizontalnav li
+{
+  display: inline-block;
+}
+
+.horizontalnav li a{
+ display: block;
+padding: 20px;
+text-decoration: none;
+color:white;
+
+
+}
+a:hover{
+  background-color: black;
+}
+.span
+{
+  float:right;
+  padding: 20px;
+}
+span{
+  color:brown;
+}

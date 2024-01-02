@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.verticalnav{
+  background-color: rgb(24, 7, 70);
+  list-style-type: none;
+  width:200px;
+  color:white;
+}
+
+.verticalnav li a
+{
+ padding:20px;
+ display:block;
+ text-align: center;
+text-decoration: none;
+color:white;
+}
+
+.verticalnav li {
+ border-bottom: 5px solid white;
+}
+
+
+
+.rightnav{
+ background-color: rgb(23, 10, 45);
+ width:290px;
+ color:white;
+}
+
+.arrangeflex{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width:100%;
+}
+

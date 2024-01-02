@@ -1,0 +1,71 @@
+
+<form [formGroup]="Hotelform" (ngSubmit)="submithotelform()">
+  <div class="form-control">
+<h2>Car Reservation Form</h2>
+</div>
+
+
+<div class="form-control" >
+         <label for=" " >Room/Suite Type</label>
+       <select value="Room/Suite type" id="" formControlName="type"  name="type">
+          <option disabled selected>Select Room/Suite type</option>
+          <option>With Ac</option>
+          <option>Without Ac</option>
+       </select>
+
+       @if(Hotelform.controls['type'].errors?.['required']&& Hotelform.controls['type'].touched){
+<small>Required Field</small>
+       }
+</div>
+<div class="form-control">
+          <label for=" ">Number of Room/Suite Type</label>
+          <select value="number" id="" formControlName="uname" name="uname">
+            <option disabled selected>Select</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+         </select>
+
+         @if(Hotelform.controls['uname'].errors?.['required']&&Hotelform.controls['uname'].touched){
+<small>Required Field</small>
+         }
+</div>
+
+<div class="form-control">
+         <label for=" ">Number of Persons</label>
+         <select value="persons" id="" formControlName="person"  name="person">
+          <option disabled selected>Select</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+       </select>
+
+</div>
+
+<div class="form-control">
+  <label for=" ">Number of Children</label>
+  <select value="children" id="" formControlName="children" name="children">
+    <option disabled selected>Select</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+ </select>
+ @if(Hotelform.controls['children'].errors?.['required'] && Hotelform.controls['children'].touched){
+  <small>Required Field</small>
+  }
+</div>
+
+<div class="form-control">
+  <label for=" ">Restaurant facilities(food)?</label>
+  <select value="res"  id="" formControlName="res" name="res">
+    <option disabled selected>Select</option>
+    <option>Yes</option>
+    <option>No</option>
+ </select>
+ @if(Hotelform.controls['res'].errors?.['required'] && Hotelform.controls['res'].touched){
+  <small>Required Field</small>
+  }
+</div>
+Total Cost:
+<button>0</button>
+</form>

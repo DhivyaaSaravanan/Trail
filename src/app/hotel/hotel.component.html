@@ -1,0 +1,56 @@
+
+<form [formGroup]="Hotelform">
+  <div class="form-control">
+<h2>Hotel Reservation Form</h2>
+</div>
+
+
+<div class="form-control" >
+         <label for="room">Room/Suite Type</label>
+       <select value="Room/Suite type" formControlName="room">
+          <option disabled selected>Select Room/Suite type</option>
+          <option>With Ac</option>
+          <option>Without Ac</option>
+       </select>
+</div>
+<div class="form-control">
+          <label for="number">Number of Room/Suite Type</label>
+          <select value="number" formControlName="number">
+            <option disabled selected>Select</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+         </select>
+</div>
+
+<div class="form-control">
+         <label for="person">Number of Persons</label>
+         <select value="persons" formControlName="persons">
+          <option disabled selected>Select</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+       </select>
+</div>
+
+<div class="form-control">
+  <label for="children">Number of Children</label>
+  <select value="children" formControlName="children">
+    <option disabled selected>Select</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+ </select>
+</div>
+
+<div class="form-control">
+  <label for="restaurant">Restaurant facilities(food)?</label>
+  <select value="res" formControlName="res">
+    <option disabled selected>Select</option>
+    <option>Yes</option>
+    <option>No</option>
+ </select>
+</div>
+Total Cost:
+<button>0</button>
+</form>

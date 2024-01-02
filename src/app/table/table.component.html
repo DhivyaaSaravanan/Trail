@@ -1,0 +1,30 @@
+
+<table>
+  <caption>Employee Details</caption>
+  <tr>
+    <th>EMP_Id</th>
+    <th>EMP_Name</th>
+    <th>Designation</th>
+    <th>Location</th>
+    <th>Address</th>
+    @if(showsalary){
+    <th>Salary</th>
+    }
+</tr>
+@for(table of Details;track table.id){
+<tr>
+<td>{{table.id}}</td>
+<td>{{table.uname}}</td>
+<td>{{table.designation}}</td>
+<td>{{table.location}}</td>
+<td>{{table.Address}}</td>
+@if(showsalary){
+<td>{{table.Salary}}</td>
+}
+</tr>
+}
+
+<tr>
+  <button (click)="hide()">Hide</button>
+</tr>
+</table>

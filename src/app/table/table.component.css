@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+table,td,tr,th{
+  border:1px solid black;
+  border-collapse: collapse;
+  border-style: inset;
+  margin:auto;
+}
+th{
+  background-color: yellow;
+}
+
+td{
+  background-color: #5DE23C;
+}
+caption{
+  font-size: 2rem;
+  text-shadow:2px 2px 5px black;
+  margin-bottom:6px;
+}
+
+table{
+  border-radius: 7px;
+  box-shadow:3px 3px 3px black;
+}
+
+td,th{
+     padding:10px;
+}
+
+.verticalnav
+{
+  margin-top: 100px;
+}
+
